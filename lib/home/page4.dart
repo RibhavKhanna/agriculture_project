@@ -25,21 +25,116 @@ class Page4 extends StatelessWidget {
                   color: Colors.grey,
                   image: DecorationImage(
                       fit: BoxFit.cover,
-                      image: AssetImage("assets/food1.jpg")
+                      image: AssetImage("assets/wheat.jpg")
                   ),
                 ),
               ),
               Align(
                 alignment: Alignment.bottomCenter,
                 child: Container(
-                  height: 400,
-                  margin: EdgeInsets.only(left: 30,right: 30,bottom: 10),
+                  width: 420,
+                  margin: EdgeInsets.only(left: 30,right: 30,bottom: 20),
+                  padding: EdgeInsets.all(20),
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(30),
-                    boxShadow: [BoxShadow(color: Colors.black12,blurRadius: 5.0,spreadRadius: 5.0)],
-                    color: Colors.white,
+                    boxShadow: [BoxShadow(color: Colors.black26,blurRadius: 10.0,spreadRadius: 10.0)],
+                    color: Colors.amber[200],
 
 
+                  ),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: const [
+                      Text(
+                        "RABI CROP",
+                        style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          letterSpacing: 2.0,
+                          color: Colors.white,
+                        ),
+                      ),
+                      SizedBox(height: 10.0,),
+                      Text(
+                        "MONTHS : FEBRUARY-MAY",
+                        style: TextStyle(
+                          fontSize: 19,
+                          fontWeight: FontWeight.bold,
+                          letterSpacing: 2.0,
+                          color: Colors.white,
+                        ),
+                      ),
+                      SizedBox(height: 10.0,),
+                      Text(
+                        "TEMPERATURE : Low Temp",
+                        style: TextStyle(
+                          fontSize: 19,
+                          fontWeight: FontWeight.bold,
+                          letterSpacing: 2.0,
+                          color: Colors.white,
+                        ),
+                      ),
+                      SizedBox(height: 10.0,),
+                      Text(
+                        "HUMIDITY : LOW",
+                        style: TextStyle(
+                          fontSize: 19,
+                          fontWeight: FontWeight.bold,
+                          letterSpacing: 2.0,
+                          color: Colors.white,
+                        ),
+                      ),
+                      SizedBox(height: 10.0,),
+                      Text(
+                        "ANNUAL RAINFALL : 50cm to 100cm",
+                        style: TextStyle(
+                          fontSize: 19,
+                          fontWeight: FontWeight.bold,
+                          letterSpacing: 2.0,
+                          color: Colors.white,
+                        ),
+                      ),
+                      SizedBox(height: 10.0,),
+                      Text(
+                        "PREFFERED SOIL TYPE :-",
+                        style: TextStyle(
+                          fontSize: 19,
+                          fontWeight: FontWeight.bold,
+                          letterSpacing: 2.0,
+                          color: Colors.white,
+                        ),
+                      ),
+                      SizedBox(height: 10.0,),
+                      Text(
+                        "  -FERTILE LLUVIAL SOIL",
+                        style: TextStyle(
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
+                          letterSpacing: 2.0,
+                          color: Colors.white,
+                        ),
+                      ),
+                      SizedBox(height: 10.0,),
+                      Text(
+                        "  -MIXED SOIL",
+                        style: TextStyle(
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
+                          letterSpacing: 2.0,
+                          color: Colors.white,
+                        ),
+                      ),
+                      SizedBox(height: 10.0,),
+                      Text(
+                        "  -LIGHT CLAYEY SOIL",
+                        style: TextStyle(
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
+                          letterSpacing: 2.0,
+                          color: Colors.white,
+                        ),
+                      ),
+                    ],
                   ),
                 ),
               ),

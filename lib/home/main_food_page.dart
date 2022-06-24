@@ -124,7 +124,7 @@ class _MainFoodPageState extends State<MainFoodPage> {
                 ),
                 SizedBox(height: 10.0,),
                 Text(
-                  description != null ? description.toString()+" "+icon.toString():"Loading",
+                  description != null ? description.toString()+" "+"&${icon.toString()}":"loading",
                   style: const TextStyle(
                     color: Colors.teal,
                     fontSize: 20.0,

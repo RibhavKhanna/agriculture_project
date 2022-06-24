@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_practice/home/page1.dart';
+// import 'package:flutter_practice/home/page1.dart';
 
 class AgriPageBody extends StatefulWidget {
   const AgriPageBody({Key? key}) : super(key: key);
@@ -42,7 +42,7 @@ class _AgriPageBodyState extends State<AgriPageBody> {
             color: index.isEven?Color(0xFF69c5df):Color(0xFF9294cc),
             image: DecorationImage(
                 fit: BoxFit.cover,
-                image: AssetImage("assets/food2.jpg")
+                image: AssetImage("assets/img${index+1}.jpg")
             ),
           ),
         ),
