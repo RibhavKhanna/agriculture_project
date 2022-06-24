@@ -32,8 +32,8 @@ class Page4 extends StatelessWidget {
               Align(
                 alignment: Alignment.bottomCenter,
                 child: Container(
-                  width: 420,
-                  margin: EdgeInsets.only(left: 30,right: 30,bottom: 20),
+
+                  margin: EdgeInsets.only(left: 30,right: 30,bottom: 20,top: 300),
                   padding: EdgeInsets.all(20),
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(30),

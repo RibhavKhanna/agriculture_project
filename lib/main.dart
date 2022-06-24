@@ -6,6 +6,8 @@ import 'package:flutter_practice/home/page3.dart';
 import 'package:flutter_practice/home/page4.dart';
 import 'package:flutter_practice/home/page5.dart';
 
+import 'home/notifications.dart';
+
 void main() {
   runApp( MaterialApp(
     debugShowCheckedModeBanner: false,
@@ -17,6 +19,7 @@ void main() {
       '/page3':(context) => Page3(),
       '/page4':(context) => Page4(),
       '/page5':(context) => Page5(),
+      '/notifications':(context) => Notifications(),
 
     },
   ));
