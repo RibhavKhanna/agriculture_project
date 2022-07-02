@@ -1,4 +1,4 @@
-import 'package:flutter/cupertino.dart';
+// import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class Page1 extends StatelessWidget {
@@ -10,7 +10,7 @@ class Page1 extends StatelessWidget {
       child: Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.amber[200],
-          title: Text("WHEAT"),
+          title: Text("FLAME SENSOR"),
           centerTitle: true,
           elevation: 0,
         ),
@@ -25,7 +25,7 @@ class Page1 extends StatelessWidget {
                   color: Colors.grey,
                   image: DecorationImage(
                       fit: BoxFit.cover,
-                      image: AssetImage("assets/wheat.jpg")
+                      image: AssetImage("assets/img1.jpg")
                   ),
                 ),
               ),

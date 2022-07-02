@@ -10,7 +10,7 @@ class Page3 extends StatelessWidget {
       child: Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.amber[200],
-          title: Text("WHEAT"),
+          title: Text("SOIL MOISTURE"),
           centerTitle: true,
           elevation: 0,
         ),
@@ -25,7 +25,7 @@ class Page3 extends StatelessWidget {
                   color: Colors.grey,
                   image: DecorationImage(
                       fit: BoxFit.cover,
-                      image: AssetImage("assets/food1.jpg")
+                      image: AssetImage("assets/img3.jpg")
                   ),
                 ),
               ),
