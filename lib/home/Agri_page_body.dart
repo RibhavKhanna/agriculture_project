@@ -19,9 +19,9 @@ class _AgriPageBodyState extends State<AgriPageBody> {
   var data_list1=[];
   var data_list2=[];
   var data_list3=[];
-  double avg1=0.0;
-  double avg2=0.0;
-  double avg3=0.0;
+  int avg1=0;
+  int avg2=0;
+  int avg3=0;
 
 
   Future getSensorData() async{
@@ -39,9 +39,9 @@ class _AgriPageBodyState extends State<AgriPageBody> {
       data_list2.forEach((item) => total2 += item);
       num total3 = 0;
       data_list3.forEach((item) => total3 += item);
-      avg1=total1/data_list1.length;
-      avg2=total2/data_list2.length;
-      avg3=total3/data_list3.length;
+      avg1=(total1/data_list1.length).round();
+      avg2=(total2/data_list2.length).round();
+      avg3=(total3/data_list3.length).round();
     });
   }
 
