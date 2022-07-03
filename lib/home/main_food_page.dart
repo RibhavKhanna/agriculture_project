@@ -73,7 +73,7 @@ class _MainFoodPageState extends State<MainFoodPage> {
       appBar: AppBar(
         backgroundColor: Colors.white,
         title: const Text(
-          "एग्रीस्मार्ट ",
+          "एग्रीस्मार्ट   ",
           style: TextStyle(
             fontSize: 30,
             color: Colors.teal,
