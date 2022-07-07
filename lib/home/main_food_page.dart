@@ -23,13 +23,17 @@ class _MainFoodPageState extends State<MainFoodPage> {
   var description;
   var windspeed;
   var icon;
-  late List<String> city;
   var query = "Lucknow";
   var loc="Lucknow";
   var warning;
 
   Future getWeather(String location) async{
-    http.Response response=await http.get(Uri.parse('http://api.weatherapi.com/v1/current.json?key=d19fb6e7ff5c435089291319220207&q=$location&aqi=no'));
+    var url=Uri.https('weatherapi-com.p.rapidapi.com', '/current.json',{
+      "q": "$location"
+    });
+    http.Response response=await http.get(url,headers: {"X-RapidAPI-Key": "65ee82884emsh9efa67c67cd165bp1614d1jsn72969f217fe6",
+      "X-RapidAPI-Host": "weatherapi-com.p.rapidapi.com",
+      "useQueryString": "true"});
     var result=jsonDecode(response.body);
 
       setState(() {
@@ -37,6 +41,7 @@ class _MainFoodPageState extends State<MainFoodPage> {
         this.description=result['current']['condition']['text'];
         this.humidity=result['current']['humidity'];
         this.windspeed=result['current']['wind_kph'];
+        this.icon=result['current']['condition']['icon'];
         print(temp);
 
       });
@@ -174,7 +179,7 @@ class _MainFoodPageState extends State<MainFoodPage> {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Image.network('https://gifimage.net/wp-content/uploads/2018/06/weather-gif-9.gif',width: 40,height: 40,),
+                        Image.network(icon != null ? "https:"+icon.toString():'https://gifimage.net/wp-content/uploads/2018/06/weather-gif-9.gif',width: 40,height: 40,),
                         Text(
                           description != null ? description.toString():"loading",
                           style: const TextStyle(
@@ -189,7 +194,7 @@ class _MainFoodPageState extends State<MainFoodPage> {
                     ),
                     const SizedBox(height: 10.0,),
                     Text(
-                      humidity != null ? "Humidity : "+humidity.toString():"Loading",
+                      humidity != null ? "Humidity : "+humidity.toString()+"%":"Loading",
                       style: const TextStyle(
                         color: Colors.white,
                         fontSize: 20.0,
@@ -198,7 +203,7 @@ class _MainFoodPageState extends State<MainFoodPage> {
                     ),
                     const SizedBox(height: 10.0,),
                     Text(
-                      windspeed != null ? "Wind Speed : "+windspeed.toString():"Loading",
+                      windspeed != null ? "Wind Speed : "+windspeed.toString()+"kmph":"Loading",
                       style: const TextStyle(
                         color: Colors.white,
                         fontSize: 20.0,
