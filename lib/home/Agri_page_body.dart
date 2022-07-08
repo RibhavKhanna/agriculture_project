@@ -103,6 +103,7 @@ class _AgriPageBodyState extends State<AgriPageBody> {
           children:[
             const Text(
               "FLAME SENSOR",
+              textDirection: TextDirection.ltr,
               style: TextStyle(
                 color: Colors.teal,
                 fontWeight: FontWeight.bold,
@@ -113,6 +114,7 @@ class _AgriPageBodyState extends State<AgriPageBody> {
             const SizedBox(height: 10,),
             Text(
               avg1.toString(),
+              textDirection: TextDirection.ltr,
               style: const TextStyle(
                 color: Colors.teal,
                 fontWeight: FontWeight.bold,
@@ -129,6 +131,7 @@ class _AgriPageBodyState extends State<AgriPageBody> {
           children:[
             const Text(
               "LIGHT SENSOR",
+              textDirection: TextDirection.ltr,
               style: TextStyle(
                 color: Colors.teal,
                 fontWeight: FontWeight.bold,
@@ -139,6 +142,7 @@ class _AgriPageBodyState extends State<AgriPageBody> {
             const SizedBox(height: 10,),
             Text(
               avg2.toString(),
+              textDirection: TextDirection.ltr,
               style: const TextStyle(
                 color: Colors.teal,
                 fontWeight: FontWeight.bold,
@@ -155,6 +159,7 @@ class _AgriPageBodyState extends State<AgriPageBody> {
         children:[
         const Text(
           "SOIL MOISTURE SENSOR",
+          textDirection: TextDirection.ltr,
           style: TextStyle(
           color: Colors.teal,
           fontWeight: FontWeight.bold,
@@ -165,6 +170,7 @@ class _AgriPageBodyState extends State<AgriPageBody> {
           const SizedBox(height: 10,),
         Text(
           avg3.toString(),
+          textDirection: TextDirection.ltr,
           style: const TextStyle(
           color: Colors.teal,
           fontWeight: FontWeight.bold,
@@ -181,6 +187,7 @@ class _AgriPageBodyState extends State<AgriPageBody> {
           children:const [
             Text(
               "WHEAT",
+              textDirection: TextDirection.ltr,
               style: TextStyle(
                 color: Colors.teal,
                 fontWeight: FontWeight.bold,
@@ -191,6 +198,7 @@ class _AgriPageBodyState extends State<AgriPageBody> {
             SizedBox(height: 10,),
             Text(
               "INFORMATION",
+              textDirection: TextDirection.ltr,
               style: TextStyle(
                 color: Colors.teal,
                 fontWeight: FontWeight.bold,
@@ -207,6 +215,7 @@ class _AgriPageBodyState extends State<AgriPageBody> {
           children:const [
             Text(
               "RICE",
+              textDirection: TextDirection.ltr,
               style: TextStyle(
                 color: Colors.teal,
                 fontWeight: FontWeight.bold,
@@ -216,6 +225,7 @@ class _AgriPageBodyState extends State<AgriPageBody> {
             ),
             Text(
               "INFORMATION",
+              textDirection: TextDirection.ltr,
               style: TextStyle(
                 color: Colors.teal,
                 fontWeight: FontWeight.bold,

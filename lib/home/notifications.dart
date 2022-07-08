@@ -11,7 +11,7 @@ class Notifications extends StatelessWidget {
       child: Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.amber[200],
-          title: Text("NOTIFICATIONS"),
+          title: Text("NOTIFICATIONS",textDirection: TextDirection.ltr,),
           centerTitle: true,
           elevation: 0,
         ),
@@ -24,6 +24,7 @@ class Notifications extends StatelessWidget {
                 children: [
                   Text(
                     "वर्तमान कार्य",
+                    textDirection: TextDirection.ltr,
                     style: TextStyle(
                       color: Colors.green[800],
                       fontSize: 25.0,
@@ -58,14 +59,14 @@ class Notifications extends StatelessWidget {
                         borderRadius: BorderRadius.circular(10),
                         boxShadow: [BoxShadow(color: Colors.grey,blurRadius: 5.0)],
                       ),
-                      child: const Center(child: Text("2d due",style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold,letterSpacing: 2.0,),)),
+                      child: const Center(child: Text("2d due",textDirection: TextDirection.ltr,style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold,letterSpacing: 2.0,),)),
                     ),
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
-                        const Text("अनुसूचित छिड़काव नहीं किया गया था",style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 15.0)),
-                        const Text("आपके पास दो दिन की देरी है",style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 15.0)),
+                        const Text("अनुसूचित छिड़काव नहीं किया गया था",textDirection: TextDirection.ltr,style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 15.0)),
+                        const Text("आपके पास दो दिन की देरी है",textDirection: TextDirection.ltr,style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 15.0)),
                         Container(
                           padding: const EdgeInsets.all(5.0),
                           decoration: const BoxDecoration(
@@ -73,7 +74,7 @@ class Notifications extends StatelessWidget {
                               borderRadius: BorderRadius.all(Radius.circular(10))
 
                           ),
-                          child: Text("मक्का #1",style: TextStyle(color: Colors.green[900],fontWeight: FontWeight.bold,fontSize: 15.0),
+                          child: Text("मक्का #1",textDirection: TextDirection.ltr,style: TextStyle(color: Colors.green[900],fontWeight: FontWeight.bold,fontSize: 15.0),
                           ),
                         ),
                       ],
@@ -107,13 +108,13 @@ class Notifications extends StatelessWidget {
                         borderRadius: BorderRadius.circular(10),
                         boxShadow: [BoxShadow(color: Colors.grey,blurRadius: 5.0)],
                       ),
-                      child: const Center(child: Text("3d left",style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold,letterSpacing: 2.0,),)),
+                      child: const Center(child: Text("3d left",textDirection: TextDirection.ltr,style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold,letterSpacing: 2.0,),)),
                     ),
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
-                        const Text("3 दिनों में खेत में खाद डालना जरूरी",style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 15.0)),
+                        const Text("3 दिनों में खेत में खाद डालना जरूरी",textDirection: TextDirection.ltr,style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 15.0)),
                         // Text("3 days",style: TextStyle(color: Colors.green[900],fontWeight: FontWeight.bold,letterSpacing: 2.0,fontSize: 12.0)),
                         Container(
                           padding: const EdgeInsets.all(5.0),
@@ -122,7 +123,7 @@ class Notifications extends StatelessWidget {
                               borderRadius: BorderRadius.all(Radius.circular(10))
 
                           ),
-                          child: Text("गेहूँ #1",style: TextStyle(color: Colors.green[900],fontWeight: FontWeight.bold,fontSize: 15.0),
+                          child: Text("गेहूँ #1",textDirection: TextDirection.ltr,style: TextStyle(color: Colors.green[900],fontWeight: FontWeight.bold,fontSize: 15.0),
                           ),
                         ),
                       ],

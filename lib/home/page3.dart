@@ -10,7 +10,7 @@ class Page3 extends StatelessWidget {
       child: Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.amber[200],
-          title: Text("SOIL MOISTURE"),
+          title: Text("SOIL MOISTURE",textDirection: TextDirection.ltr,),
           centerTitle: true,
           elevation: 0,
         ),

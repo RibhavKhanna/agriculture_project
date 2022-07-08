@@ -3,6 +3,7 @@ import 'dart:ui';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_practice/home/Agri_page_body.dart';
+import 'package:google_fonts/google_fonts.dart';
 // import 'package:flutter_practice/widgets/big_text.dart';
 import 'package:http/http.dart'as http;
 import 'dart:convert';
@@ -79,11 +80,13 @@ class _MainFoodPageState extends State<MainFoodPage> {
         backgroundColor: Colors.white,
         title: const Text(
           "एग्रीस्मार्ट   ",
+          textDirection: TextDirection.ltr,
           style: TextStyle(
             fontSize: 30,
             color: Colors.teal,
             fontWeight: FontWeight.bold,
             letterSpacing: 2.0,
+
           ),
         ),
         actions: [
@@ -160,6 +163,7 @@ class _MainFoodPageState extends State<MainFoodPage> {
                   children: [
                     Text(
                       "Currently in ${loc}",
+                      textDirection: TextDirection.ltr,
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 22.0,
@@ -169,6 +173,7 @@ class _MainFoodPageState extends State<MainFoodPage> {
                     SizedBox(height: 10.0,),
                     Text(
                       temp != null ? temp.toString().substring(0,4)+"\u00B0":"Loading",
+                      textDirection: TextDirection.ltr,
                       style: const TextStyle(
                         color: Colors.white,
                         fontSize: 20.0,
@@ -182,6 +187,7 @@ class _MainFoodPageState extends State<MainFoodPage> {
                         Image.network(icon != null ? "https:"+icon.toString():'https://gifimage.net/wp-content/uploads/2018/06/weather-gif-9.gif',width: 40,height: 40,),
                         Text(
                           description != null ? description.toString():"loading",
+                          textDirection: TextDirection.ltr,
                           style: const TextStyle(
                             color: Colors.white,
                             fontSize: 20.0,
@@ -195,6 +201,7 @@ class _MainFoodPageState extends State<MainFoodPage> {
                     const SizedBox(height: 10.0,),
                     Text(
                       humidity != null ? "Humidity : "+humidity.toString()+"%":"Loading",
+                      textDirection: TextDirection.ltr,
                       style: const TextStyle(
                         color: Colors.white,
                         fontSize: 20.0,
@@ -204,6 +211,7 @@ class _MainFoodPageState extends State<MainFoodPage> {
                     const SizedBox(height: 10.0,),
                     Text(
                       windspeed != null ? "Wind Speed : "+windspeed.toString()+"kmph":"Loading",
+                      textDirection: TextDirection.ltr,
                       style: const TextStyle(
                         color: Colors.white,
                         fontSize: 20.0,

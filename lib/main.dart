@@ -6,10 +6,12 @@ import 'package:flutter_practice/home/page3.dart';
 import 'package:flutter_practice/home/page4.dart';
 import 'package:flutter_practice/home/page5.dart';
 import 'package:flutter_practice/splash.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import 'home/notifications.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
   runApp( MaterialApp(
     debugShowCheckedModeBanner: false,
     initialRoute: '/',
@@ -24,6 +26,11 @@ void main() {
       '/notifications':(context) => Notifications(),
 
     },
-  ));
+    theme: ThemeData(
+
+      textTheme: GoogleFonts.merriweatherTextTheme(),
+    ),
+  )
+  );
 }
 

@@ -10,7 +10,7 @@ class Page2 extends StatelessWidget {
       child: Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.amber[200],
-          title: Text("LIGHT SENSOR"),
+          title: Text("LIGHT SENSOR",textDirection: TextDirection.ltr,),
           centerTitle: true,
           elevation: 0,
         ),
