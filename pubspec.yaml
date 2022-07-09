@@ -80,6 +80,7 @@ flutter:
     - assets/back.jpg
     - assets/Agrismart.png
     - assets/logo.png
+    - assets/grow.gif
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
