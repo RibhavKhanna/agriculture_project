@@ -6,13 +6,17 @@ import 'package:flutter_practice/home/page2.dart';
 import 'package:flutter_practice/home/page3.dart';
 import 'package:flutter_practice/home/page4.dart';
 import 'package:flutter_practice/home/page5.dart';
+import 'package:flutter_practice/home/record.dart';
 import 'package:flutter_practice/splash.dart';
+import 'package:flutter_practice/widgets/RecordData.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import 'home/notifications.dart';
 
-void main() {
+void main() async{
   WidgetsFlutterBinding.ensureInitialized();
+  await UserSheetApi.init();
+
   runApp( MaterialApp(
     debugShowCheckedModeBanner: false,
     initialRoute: '/',
@@ -26,6 +30,7 @@ void main() {
       '/page5':(context) => Page5(),
       '/calculator':(context)=>Calculate(),
       '/notifications':(context) => Notifications(),
+      '/record':(context) => Record(),
 
     },
     theme: ThemeData(

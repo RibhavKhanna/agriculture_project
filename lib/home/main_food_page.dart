@@ -134,7 +134,7 @@ class _MainFoodPageState extends State<MainFoodPage> {
               leading: const Icon(Icons.receipt_long),
               title: const Text('Record'),
               onTap: () {
-                Navigator.pop(context);
+                Navigator.pushNamed(context, '/record');
               },
             ),
             ListTile(
@@ -341,7 +341,7 @@ class _MainFoodPageState extends State<MainFoodPage> {
           ),
           BottomNavigationBarItem(
             icon:IconButton(onPressed: _launchURL, icon:  Icon(Icons.near_me_rounded)),
-            label: 'Today',
+            label: 'NEWS',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.person_outlined),
