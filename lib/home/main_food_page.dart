@@ -81,6 +81,16 @@ class _MainFoodPageState extends State<MainFoodPage> {
       Exception("could not open page please try again after some time");
     }
   }
+  _launchrecordURL() async {
+    try {
+      const url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQTwAgLfiRADmdpPpshPIuVWARmttHBQd2Q-P3XXr8Ntp8PEJN10OE1Ur8MgQSq_VDVCQPScEGjl743/pubhtml";
+
+      await launchUrl(Uri.parse(url));
+
+    }catch(e){
+      Exception("could not open page please try again after some time");
+    }
+  }
 
 
 
@@ -143,6 +153,15 @@ class _MainFoodPageState extends State<MainFoodPage> {
               onTap: () {
 
                 _launchspreedsheetURL();
+                Navigator.pop(context);
+              },
+            ),
+            ListTile(
+              leading: const Icon(Icons.print_outlined),
+              title: const Text('Print record'),
+              onTap: () {
+
+                _launchrecordURL();
                 Navigator.pop(context);
               },
             ),

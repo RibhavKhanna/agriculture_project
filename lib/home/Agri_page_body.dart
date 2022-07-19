@@ -243,8 +243,12 @@ class _AgriPageBodyState extends State<AgriPageBody> {
       child: TextButton(
         onPressed: (){
 
-          // dynamic page = Page${index;}();
-          Navigator.pushNamed(context, '/page${index+1}');
+
+          Navigator.pushNamed(context, '/page${index+1}',arguments: {
+            'flame':avg1,
+            'light':avg2,
+            'soil':avg3
+          });
           },
         child: Stack(
           children:[
