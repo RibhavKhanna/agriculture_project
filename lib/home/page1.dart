@@ -33,14 +33,14 @@ class _Page1State extends State<Page1> {
 
     }
     Widget Icon_select(){
-      if(f_value>2000){
+      if(f_value>1100){
         return Icon(Icons.warning,color: Colors.red,size: 80,);
       }else{
         return Icon(Icons.thumb_up,color: Colors.green,size: 80);
       }
     }
     String Text_select(){
-      if(f_value>2000){
+      if(f_value>1100){
         return "Flame value is\n HIgh please check\n for a fire";
       }else{
         return "Everything is \nfine flame value\n under control";

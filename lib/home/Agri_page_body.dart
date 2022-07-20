@@ -25,7 +25,7 @@ class _AgriPageBodyState extends State<AgriPageBody> {
 
 
   Future getSensorData() async{
-    http.Response response=await http.get(Uri.parse('https://script.googleusercontent.com/macros/echo?user_content_key=srCOzIRjFPjezGa0FJtozDZDqmUDAqoGWp6wgZEUX5fbc89n_lBORswklKl5hdGJJbblO_87-QIpyuhMM3GccUMriX0kmwf8m5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnE8K225hnKl5PFZxItyTYhgJkRbxpUSpmDeUegO7ah5q3HUDy73uGNfM8MTqvc8lWD7BN3xrM8PPOjmqkxPtpwqpBfHoQsxc4w&lib=MXsDzm9Yz05Na2TaEooMXAhLPmd7L4iXl'));
+    http.Response response=await http.get(Uri.parse('https://script.google.com/macros/s/AKfycbxG1QIo__VBiW8ahhIXZCVT2uP4u3mHHb3WO6v4L-p5D8umb2ItG60DELbXX4uqdNOC/exec'));
     var result=jsonDecode(response.body);
     setState(() {
       for(var i in result){
@@ -34,14 +34,17 @@ class _AgriPageBodyState extends State<AgriPageBody> {
         data_list3.add(i['SOIL_MOISTURE']);
       }
       num total1 = 0;
-      data_list1.forEach((item) => total1 += item);
+      // data_list1.forEach((item) => total1 += item);
       num total2 = 0;
-      data_list2.forEach((item) => total2 += item);
+      // data_list2.forEach((item) => total2 += item);
       num total3 = 0;
-      data_list3.forEach((item) => total3 += item);
-      avg1=(total1/data_list1.length).round();
-      avg2=(total2/data_list2.length).round();
-      avg3=(total3/data_list3.length).round();
+      // data_list3.forEach((item) => total3 += item);
+      total1=data_list1[data_list1.length-1]+data_list1[data_list1.length-2]+data_list1[data_list1.length-3];
+      total2=data_list2[data_list2.length-1]+data_list2[data_list2.length-2]+data_list2[data_list2.length-3];
+      total3=data_list3[data_list3.length-1]+data_list3[data_list3.length-2]+data_list3[data_list3.length-3];
+      avg1=(total1/3).round();
+      avg2=(total2/3).round();
+      avg3=(total3/3).round();
     });
   }
 
