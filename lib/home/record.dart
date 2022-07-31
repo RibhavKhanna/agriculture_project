@@ -70,10 +70,11 @@ class _RecordState extends State<Record> {
               Center(
                 child: Container(
                   padding: EdgeInsets.all(15),
-                  width: 300,
+                  width: 400,
                   child: DropdownButtonFormField(
                       // style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),
                       decoration: InputDecoration(
+
                         enabledBorder: OutlineInputBorder(
                           borderSide: BorderSide(color: Colors.blue, width: 2),
                           borderRadius: BorderRadius.circular(20),
@@ -108,7 +109,7 @@ class _RecordState extends State<Record> {
               Center(
                 child: Container(
                   padding: EdgeInsets.all(15),
-                  width: 300,
+                  width: 400,
                   child: DropdownButtonFormField(
                     // style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),
                       decoration: InputDecoration(
